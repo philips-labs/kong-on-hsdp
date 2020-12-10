@@ -85,8 +85,7 @@ The [Konga](https://github.com/pantsel/konga) dashboard UI is deployed as part o
 $ cf ssh -L1337:localhost:1337 konga
 ```
 
-Once logged in you can navigate to [http://localhost:1337](http://localhost:1337) in your browser. Go to the `CONNECTIONS` section and add a new connection using the value of `kong_api_internal_endpoint` where it asks for the `Kong Admin URL`. Once enter you should
-see the Konga dashboard:
+Once logged in you can navigate to [http://localhost:1337](http://localhost:1337) in your browser. Go to the `CONNECTIONS` section and add a new connection using the value of `kong_api_internal_endpoint` where it asks for the `Kong Admin URL`. If the output variables have scrolled off your screen you can always retrieve them again by running `terraform outputs`. Once enter you should see the Konga dashboard:
 
 ![konga](resources/konga.png)
 
