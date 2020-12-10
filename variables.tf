@@ -6,6 +6,7 @@ variable "cf_username" {
 variable "cf_password" {
   type        = string
   description = "Cloud foundry password"
+  sensitive   = true
 }
 
 variable "cf_api" {

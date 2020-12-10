@@ -1,5 +1,13 @@
+output "kong_gateway" {
+  value = "https://${module.kong.kong_endpoint}"
+}
+
 output "kong_api_proxy" {
-  value = module.kong.kong_api_endpoint
+  value = "https://${module.kong.kong_api_endpoint}"
+}
+
+output "kong_api_internal_endpoint" {
+  value = "http://kong-${module.kong.kong_api_username}.apps.internal:8001"
 }
 
 output "kong_api_username" {
