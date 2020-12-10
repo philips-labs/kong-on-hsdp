@@ -9,7 +9,7 @@ variable "cf_password" {
 }
 
 variable "cf_api" {
-  default     = "https://api.eu1.phsdp.com"
+  default     = "https://api.cloud.pcftest.com"
   type        = string
   description = "Cloud foundry API endpoint (region specific)"
 }
@@ -24,15 +24,9 @@ variable "cf_space" {
   description = "Cloud foundry space to provision Kafdrop in"
 }
 
-variable "cf_region" {
-  type        = string
-  default     = "eu-west"
-  description = "Cloud foundry region"
-}
-
 variable "cf_domain" {
   type        = string
-  default     = "eu-west.philips-healthsuite.com"
+  default     = "us-east.philips-healthsuite.com"
   description = "Default Cloud foundry domain to use for apps"
 }
 
