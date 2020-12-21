@@ -82,7 +82,7 @@ kong_api_internal_endpoint = "http://33483600f6a13c55.apps.internal:8001"
 The [Konga](https://github.com/pantsel/konga) dashboard UI is deployed as part of the module. It does not have a public route by default since there is no authentication mechanism in place. You can port forward the website to your local computer with the following command:
 
 ```shell
-$ cf ssh -L1337:localhost:1337 konga
+$ cf ssh -L 1337:localhost:1337 konga
 ```
 
 Once logged in you can navigate to [http://localhost:1337](http://localhost:1337) in your browser. Go to the `CONNECTIONS` section and add a new connection using the value of `kong_api_internal_endpoint` where it asks for the `Kong Admin URL`. If the output variables have scrolled off your screen you can always retrieve them again by running `terraform outputs`. Once enter you should see the Konga dashboard:
